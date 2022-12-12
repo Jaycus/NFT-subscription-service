@@ -4,9 +4,11 @@ import requests
 def sign_up_for_nft_subscription():
   # Prompt user for email address
   email = input("Enter your email address: ")
+  # Prompt user for membership level
+  level = int(input("Please enter your desired membership level (1-3): "))
 
   # Send a POST request to the NFT subscription service to sign up
-  response = requests.post("https://nft-subscription-service.com/signup", json={"email": email})
+  response = requests.post("https://nft-subscription-service.com/signup", json={"email": email, "level": level})
 
   # Handle response
   if response.status_code == 200:
