@@ -2,7 +2,7 @@
 
 A Python script for signing up for and getting the monthly NFT collection from an NFT subscription service.
 
-##Requirements
+## Requirements
 Python 3.6 or later
 requests module
 Usage
@@ -11,7 +11,7 @@ python nft_subscription.py
 
 The script will prompt you to enter your email address and desired membership level (1-3), and then sign you up for the NFT subscription. It will then retrieve the current month's NFT collection and print it to the console.
 
-##Functions
+## Functions
 The script defines the following functions:
 
 sign_up_for_nft_subscription()
